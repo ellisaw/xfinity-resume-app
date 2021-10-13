@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Resume Web App</title>
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Import Javascript -->
+  <script src="script.js" type="text/javascript"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Browse <span>Ellis Wright</span></h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <div id="navbar">
+    <nav>
+      <ul>
+        <li id="active" onclick="showPage(1)"><a href="#" >Experience</a></li>
+        <li onclick="showPage(2)"><a href="#">Resume</a></li>
+        <li onclick="showPage(3)"><a href="#">About Me</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Experience (Page 1) -->
+  <div id="page1-holder">
+    <iframe src="experience/experience.html" title="Work Experience" id="page1"></iframe>
+  </div>
+</body>
+</html>
